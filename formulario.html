@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de alta de usuario</title>
+  <link rel="stylesheet" href="styleformm.css">
+</head>
+<header class="primerh"></header>
+
+<nav>
+  <a href="index.html">INICIO</a>
+  <a href="selector.html">SELECTORES</a>
+  <a href="formulario.html">FORMULARIO</a>
+  <a href="yen.html">MANEJAMOS TABLAS</a>
+  <a href="recetas.html">RECETARIO</a>
+</nav>
+<body>
+  
+  <div class="main-container">
+    <form class="form1">
+      <h1>Formulario de alta de usuario</h1>
+      <table>
+        <tr>
+          <td colspan="2" class="centered">Identificador de nuevo usuario</td>
+          <td colspan="2"><input type="text" id="identificador" value="usu_012345" readonly></td>
+        </tr>
+        <tr>
+          <td>Nombre:</td>
+          <td><input type="text" id="nombre" name="nombre" required></td>
+          <td>Apellidos:</td>
+          <td><input type="text" id="apellidos" name="apellidos" required></td>
+        </tr>
+        <tr>
+          <td>Contraseña:</td>
+          <td><input type="password" id="contrasena" name="contrasena" required></td>
+          <td>Confirmar contraseña:</td>
+          <td><input type="password" id="confirmar_contrasena" name="confirmar_contrasena" required></td>
+        </tr>
+        <tr>
+          <td>Email:</td>
+          <td colspan="3"><input type="email" id="email" name="email" required></td>
+        </tr>
+        <tr>
+          <td>Sexo:</td>
+          <td colspan="3">
+            <input type="radio" id="hombre" name="sexo" value="hombre">
+            <label for="hombre">Hombre</label>
+            <input type="radio" id="mujer" name="sexo" value="mujer" checked>
+            <label for="mujer">Mujer</label>
+          </td>
+        </tr>
+        <tr>
+          <td>Aficiones:</td>
+          <td colspan="3">
+            <input type="checkbox" id="deportes" name="aficiones" value="deportes">
+            <label for="deportes">Deportes</label>
+            <input type="checkbox" id="lectura" name="aficiones" value="lectura" checked>
+            <label for="lectura">Lectura</label>
+            <input type="checkbox" id="cine" name="aficiones" value="cine">
+            <label for="cine">Cine</label>
+          </td>
+        </tr>
+        <tr>
+          <td>País:</td>
+          <td colspan="3">
+            <select id="pais" name="pais">
+              <option value="españa">España</option>
+              <option value="francia">Francia</option>
+              <option value="portugal">Portugal</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Subir su foto:</td>
+          <td colspan="3">
+            <input type="file" id="foto" name="foto">
+          </td>
+        </tr>
+        <tr>
+          <td>Comentarios personales:</td>
+          <td colspan="3">
+            <textarea id="comentarios" name="comentarios" rows="5" cols="40" placeholder="Escriba aquí sus comentarios"></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="centered">
+            <button type="reset">Resetear</button>
+          </td>
+          <td colspan="2" class="centered">
+            <button type="submit">Enviar</button>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </div>
+
+  <footer class="ano">
+    ©<span id="year"></span>. Adrian Morales
+  </footer>
+  <script>
+    // Obtener el año actual
+    const year = new Date().getFullYear();
+    
+    // Asignar el año al span con id "year"
+    document.getElementById("year").textContent = year;
+  </script>
+</body>
+</html>

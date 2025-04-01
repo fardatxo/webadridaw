@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Lenguaje de Marcas</title>
+  <link rel="stylesheet" href="styleInicio.css">
+</head>
+<body>
+
+<header></header>
+
+<!-- Reloj en tiempo real -->
+<div id="reloj"></div>
+
+<!-- Botón para cambiar entre fondo oscuro y claro -->
+<button class="btn-oscuro" onclick="cambiarFondo()">Cambiar Fondo</button>
+
+<nav>
+  <a href="index.html">INICIO</a>
+  <a href="selector.html">SELECTORES</a>
+  <a href="formulario.html">FORMULARIO</a>
+  <a href="yen.html">MANEJAMOS TABLAS</a>
+  <a href="recetas.html">RECETARIO</a>
+</nav>
+
+<div class="contenedor">
+  <section class="seccion">
+    <h5> Selectores</h5>
+    <div class="contenido">
+      <p>Los selectores en HTML son usados para identificar y aplicar estilos a elementos específicos de una página web. Los más comunes son:
+
+        Por etiqueta: Selecciona todos los elementos de un tipo (ej. p selecciona todos los párrafos).
+        Por clase: Selecciona elementos con una clase específica (.miClase).
+        Por ID: Selecciona un solo elemento con un ID único (#miID).
+        Estos selectores permiten aplicar estilos de manera precisa a los elementos de tu página web.</p>
+    </div>
+    
+    <div class="contenedor-imagen">
+      <img src="imgS.png" alt="imagenFormulario" class="imgS">
+    </div>
+  </section>
+  
+  <section class="seccion">
+    <h5>Formulario</h5>
+    <div class="contenido">
+      <p>Los formularios en HTML son una de las herramientas más importantes 
+        en el desarrollo web, ya que permiten a los usuarios ingresar y enviar información. 
+        Se utilizan en una amplia variedad de aplicaciones, como registros de usuario, 
+        inicios de sesión, encuestas, comentarios y compras en línea.</p>
+    </div>
+    
+    <div class="contenedor-imagen">
+      <img src="imgF.png" alt="imagenFormulario" class="imgF">
+    </div>
+  </section>
+
+  <section class="seccion">
+    <h5>Tabla</h5>
+    <div class="contenido">
+      <p>Las tablas en HTML son una de las herramientas más esenciales en el desarrollo web, 
+        ya que permiten organizar y presentar información de manera estructurada. 
+        Se utilizan en una gran variedad de aplicaciones, como reportes de datos, 
+        listados de productos, comparaciones de precios, horarios y estadísticas. 
+        Gracias a sus atributos y estilos, las tablas pueden adaptarse a diferentes 
+        diseños y mejorar la experiencia del usuario al visualizar información de forma clara y ordenada.</p>
+    </div>
+    <img src="imgT.png" alt="imagenTabla" class="imgT">
+  </section>
+
+  <section class="seccion">
+    <h5>Recetario</h5>
+    <div class="contenido">
+      <p>Las recetas en HTML son una excelente manera de estructurar y 
+        presentar instrucciones de cocina de forma clara y organizada en una página web. 
+        Utilizando etiquetas como h1 para el título, p para descripciones, ul o ol 
+        para listas de ingredientes y pasos, y table para mostrar información nutricional, 
+        es posible crear un diseño fácil de leer e interactivo. Además, combinando 
+        HTML con CSS y JavaScript, se pueden agregar imágenes, videos y botones dinámicos para 
+        mejorar la experiencia del usuario al seguir una receta.</p>
+    </div>
+    <img src="imgR.png" alt="imagenTabla" class="imgR">
+  </section>
+</div>
+
+<footer>
+  ©<span id="year"></span>. Adrian Morales
+</footer>
+
+<script>
+// Función para mostrar el reloj en tiempo real
+function actualizarReloj() {
+  const reloj = document.getElementById('reloj');
+  const ahora = new Date();
+  const horas = ahora.getHours().toString().padStart(2, '0');
+  const minutos = ahora.getMinutes().toString().padStart(2, '0');
+  const segundos = ahora.getSeconds().toString().padStart(2, '0');
+  reloj.textContent = `${horas}:${minutos}:${segundos}`;
+}
+
+// Llamar a la función de actualizar reloj cada segundo
+setInterval(actualizarReloj, 1000);
+
+// Obtener el año actual para el footer
+const year = new Date().getFullYear();
+document.getElementById("year").textContent = year;
+
+// Variable para controlar el estado del fondo
+let fondoOscuro = false;
+
+// Función para cambiar el fondo entre oscuro y claro
+function cambiarFondo() {
+  if (fondoOscuro) {
+    document.body.style.backgroundColor = "#ffffffc4"; // Fondo blanco
+    document.body.style.color = "black"; // Texto en negro
+    fondoOscuro = false; // Cambio de estado
+  } else {
+    document.body.style.backgroundColor = "black"; // Fondo oscuro
+    document.body.style.color = "white"; // Texto en blanco
+    fondoOscuro = true; // Cambio de estado
+  }
+}
+</script>
+
+</body>
+</html>

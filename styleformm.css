@@ -1,0 +1,120 @@
+body {
+  font-family: Arial, sans-serif;
+  background-image: url(https://img.freepik.com/vector-premium/fondo-estetico-color-suave-textura-hojas_966734-73.jpg);
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Asegura que el cuerpo tenga al menos la altura de la pantalla */
+}
+header {
+  background-image: url("adrián morales.png"); 
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  color: white;
+  height: 150px; 
+  width: 100%;
+  padding: 15px 20px;
+  font-weight: bold;
+  display: flex;
+  align-items: center; 
+}
+
+/* Estilo para la barra de navegación */
+nav {
+  background-color: rgb(236, 245, 235);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+nav a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  padding: 14px 16px;
+}
+
+nav a:hover {
+  background-color: #d3d3d3;
+}
+/* Contenedor principal para centrar el contenido y empujar el footer */
+.main-container {
+  flex: 1; /* Permite que este contenedor crezca y ocupe el espacio disponible */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px; /* Espacio alrededor para evitar que se vea pegado a los bordes */
+}
+
+h1 {
+  text-align: left;
+  color: #000;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td {
+  padding: 10px;
+  border: 1px solid #000;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+textarea,
+select {
+  width: 95%;
+  padding: 5px;
+  border: 1px solid #000;
+  border-radius: 3px;
+}
+
+input[type="file"] {
+  width: auto;
+}
+
+input[type="checkbox"] {
+  align-items: normal;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ddd;
+}
+
+.centered {
+  text-align: center;
+}
+
+/* Estilos para el formulario */
+.form1 {
+  width: 60%;
+  max-width: 600px; /* Evita que se haga muy grande en pantallas anchas */
+  background-color: #f4a460;
+  padding: 20px;
+  border: 2px solid #000;
+  border-radius: 5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para mejor apariencia */
+}
+
+/* Estilos para el footer */
+.ano {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+}

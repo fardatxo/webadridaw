@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recetas de Adrian Morales</title>
+    <link rel="stylesheet" href="stylerecetas.css">
+</head>
+<header class="primerh"></header>
+
+<nav>
+    <a href="index.html">INICIO</a>
+    <a href="selector.html">SELECTORES</a>
+    <a href="formulario.html">FORMULARIO</a>
+    <a href="yen.html">MANEJAMOS TABLAS</a>
+    <a href="recetas.html">RECETARIO</a>
+</nav>
+
+<body>
+    <div class="zapato">
+        <header class="prim">
+            <h2>Recetas de Adrian Morales</h2>
+        </header>
+        <table>
+            <tr>
+                <th class="dos">Nombre del plato</th>
+                <th class="dos">Imagen</th>
+            </tr>
+            <tr>
+                <td>
+                    <h2 class="torrilasa">Torrija</h2>
+                    <h3>INGREDIENTES</h3>
+                    <ul>
+                        <li>Una barra de pan del día anterior</li>
+                        <li>4 huevos</li>
+                        <li>1 litro de leche Central Lechera Asturiana</li>
+                        <li>1 taza de azúcar</li>
+                        <li>Un trozo de cáscara de limón y otro de naranja</li>
+                        <li>Una ramita de canela en rama</li>
+                        <li>Una cucharadita de canela en polvo</li>
+                    </ul>
+                    <h3>ELABORACIÓN</h3>
+                    <ol>
+                        <li>Cortar el pan brioche en rebanadas anchas, de aproximadamente 1.5 cm.</li>
+                        <li>Calentar la leche con vainilla y corteza de limón sin llegar a hervir.</li>
+                        <li>Dejar remojar el pan en la leche 4 h.</li>
+                        <li>Rebozar con huevo.</li>
+                    </ol>
+                    <p><strong>PLATO TRADICIONAL DE PASCUA</strong></p>
+                </td>
+                <td class="foto"><a href="https://www.centrallecheraasturiana.es/recetas/torrijas-con-leche/" target="_blank"><img src="Torrijas.jpg" alt="Torrija"></a></td>
+            </tr>
+            <tr>
+                <td>
+                    <h2 class="torrilasa">Lasaña de carne</h2>
+                    <h3>INGREDIENTES</h3>
+                    <ul>
+                        <li>2 cebollas y 2 dientes de ajo</li>
+                        <li>2 pimientos rojos</li>
+                        <li>2 zanahorias</li>
+                        <li>150 g. de bacon o panceta</li>
+                        <li>500 g. de carne (mezcla de cerdo y ternera)</li>
+                        <li>12 láminas de lasaña normales o 6 grandes</li>
+                        <li>100 g. de queso rallado tipo Parmesano</li>
+                    </ul>
+                    <h3>ELABORACIÓN</h3>
+                    <ol>
+                        <li>Introducimos las láminas de lasaña en agua hirviendo una a una sin que se toquen.</li>
+                        <li>Elaborar una salsa boloñesa.</li>
+                        <li>Preparar salsa bechamel.</li>
+                        <li>Montar las lasañas y hornear.</li>
+                    </ol>
+                    <p><strong>PLATO TRADICIONAL DE ITALIA</strong></p>
+                </td>
+                <td class="foto"><img src="lasagna.jpg" alt="Lasaña"></td>
+            </tr>
+        </table>
+        <footer>
+            <p>Suscríbete y recibe un catálogo completo de recetas completamente gratuito</p>
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <button type="submit">Enviar</button>
+            </form>
+        </footer>
+        <footer class="ano">
+            ©<span id="year"></span>. Adrian Morales
+          </footer>
+          <script>
+            // Obtener el año actual
+            const year = new Date().getFullYear();
+            
+            // Asignar el año al span con id "year"
+            document.getElementById("year").textContent = year;
+          </script>
+    </div>
+</body>
+</html>

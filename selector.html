@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Ejercicio de selectores para ciclo formativo de grado superior">
+	<meta name="author" content="Miguel López">
+	<title>Ejercicio de selectores</title>
+	<link rel="stylesheet" href="styleselector.css">
+</head>
+
+<body>
+  <header class="primerh"></header>
+
+  <nav>
+      <a href="index.html">INICIO</a>
+      <a href="selector.html">SELECTORES</a>
+      <a href="formulario.html">FORMULARIO</a>
+      <a href="yen.html">MANEJAMOS TABLAS</a>
+      <a href="recetas.html">RECETARIO</a>
+  </nav>
+
+  <div class="contenedor">
+    <table> 
+        <tr>
+            <td>verdecito</td>
+            <td>verdecito</td>
+            <td>verdecito</td>
+            <td>verdecito</td>
+        </tr>
+        <tr>
+            <td>rojo</td>
+            <td>rojo</td>
+            <td>rojo</td>
+            <td>rojo</td>
+        </tr>
+        <tr>
+            <td>blue</td>
+            <td>blue</td>
+            <td>blue</td>
+            <td>blue</td>
+        </tr>
+        <tr>
+            <td>naranja</td>
+            <td>naranja</td>
+            <td>naranja</td>
+            <td>naranja</td>
+        </tr>
+        <tr>
+            <td>morado</td>
+            <td>morado</td>
+            <td>morado</td>
+            <td>morado</td>
+        </tr>
+        <tr>
+            <td>oliva</td>
+            <td>oliva</td>
+            <td>oliva</td>
+            <td>oliva</td>
+        </tr>
+        <tr>
+            <td>fucsia</td>
+            <td>fucsia</td>
+            <td>fucsia</td>
+            <td>fucsia</td>
+        </tr>
+        <tr>
+            <td>verde</td>
+            <td>verde</td>
+            <td>verde</td>
+            <td>verde</td>
+        </tr>
+    </table>
+  </div>
+
+  <footer>
+    ©<span id="year"></span>. Adrian Morales
+  </footer>
+
+  <script>
+    // Obtener el año actual
+    const year = new Date().getFullYear();
+    // Asignar el año al span con id "year"
+    document.getElementById("year").textContent = year;
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,127 @@
+/* Reset de márgenes y padding para evitar espacios indeseados */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Asegura que el contenido se distribuya bien */
+    align-items: center;
+    height: 100vh; /* Usa toda la altura de la ventana */
+}
+
+/* Header fijo arriba */
+header {
+    background-image: url("adrián morales.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    height: 150px;
+    width: 100%;
+    padding: 15px 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* Espacio para evitar solapamiento del header */
+.header-space {
+    height: 150px;
+}
+
+/* Estilos para la barra de navegación */
+nav {
+    background-color: rgb(236, 245, 235);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: fixed;
+    top: 150px;
+    left: 0;
+    z-index: 999;
+}
+
+/* Espacio para evitar solapamiento del nav */
+.nav-space {
+    height: 50px;
+}
+
+nav a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 14px 16px;
+}
+
+nav a:hover {
+    background-color: #d3d3d3;
+}
+
+/* Contenedor de la tabla centrado */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1; /* Ocupa el espacio disponible */
+    width: 100%;
+    padding-top: 50px; /* Espacio extra para no chocar con el nav */
+}
+
+/* Estilo para la tabla */
+table {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    border-collapse: collapse;
+    background-color: #F4F4F4;
+    border-color: #7C7C7C;
+    width: 30%;
+    border: 1px solid #333;
+}
+
+table, tr, th, td {
+    border: 1px solid #333;
+    line-height: 2em;
+}
+
+th {
+    background-color: #F5F5F5;
+    padding: 0 .5em;
+}
+
+td {
+    padding: 0 .3em;
+}
+
+td:hover {
+    background-color: #E4E4E4;
+    cursor: pointer;
+}
+
+tr:nth-child(2n) {
+    background-color: #FFFFCC;
+}
+
+tr:hover {
+    background: #FFFF66;
+}
+
+/* Estilos para el footer */
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

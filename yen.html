@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styleyen.css">
+</head>
+<header class="primerh"></header>
+
+<nav>
+    <a href="index.html">INICIO</a>
+    <a href="selector.html">SELECTORES</a>
+    <a href="formulario.html">FORMULARIO</a>
+    <a href="yen.html">MANEJAMOS TABLAS</a>
+    <a href="recetas.html">RECETARIO</a>
+</nav>
+<body>
+  <div class="container">
+      <table>
+          <tr>
+              <th>Cambio</th>
+              <th>Compra</th>
+              <th>Venta</th>
+              <th>Máximo</th>
+              <th>Mínimo</th>
+          </tr>
+          <tr>
+              <th class="euro">Euro/Dolar</th>
+              <td>1.2525</td>
+              <td>1.2527</td>
+              <td>1.2539</td>
+              <td>1.2488</td>
+          </tr>
+          <tr>
+              <th class="dolar">Dolar/Yen</th>
+              <td>119.01</td>
+              <td>119.05</td>
+              <td>119.82</td>
+              <td>119.82</td>
+          </tr>
+          <tr>
+              <th class="libra">Libra/Dolar</th>
+              <td>1.8606</td>
+              <td>1.8611</td>
+              <td>1.8651</td>
+              <td>1.8522</td>
+          </tr>
+          <tr>
+              <th class="yen">Yen/Euro</th>
+              <td>149.09</td>
+              <td>149.13</td>
+              <td>149.79</td>
+              <td>148.96</td>
+          </tr>
+      </table>
+  </div>
+</body>
+<footer class="ano">
+    ©<span id="year"></span>. Adrian Morales
+  </footer>
+  <script>
+    // Obtener el año actual
+    const year = new Date().getFullYear();
+    
+    // Asignar el año al span con id "year"
+    document.getElementById("year").textContent = year;
+  </script>
+
+</html>

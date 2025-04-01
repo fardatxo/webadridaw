@@ -1,0 +1,172 @@
+/* Estilos globales */
+body {
+  background-color: #ffffffc4;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-image: url("adrián morales.png"); 
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  color: white;
+  height: 150px; 
+  width: 100%;
+  padding: 15px 20px;
+  font-weight: bold;
+  display: flex;
+  align-items: center; 
+}
+
+/* Estilo para la barra de navegación */
+nav {
+  background-color: rgb(236, 245, 235);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+nav a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  padding: 14px 16px;
+}
+
+nav a:hover {
+  background-color: #d3d3d3;
+}
+
+/* Estilo para el contenedor */
+.contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+}
+
+/* Estilos para las secciones */
+.seccion {
+  background-color: #f4f4f435;
+  width: 45%;
+  height: 500px;
+  display: block;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+
+h5 {
+  font-size: larger;
+  padding-left: 20px;
+}
+
+/* Contenido dentro de las secciones */
+.contenido {
+  padding-right: 50%;
+  padding-left: 20px;
+  padding-bottom: 50px;
+  width: 50%;
+  top: -25px;
+}
+
+/* Estilos para las imágenes */
+img {
+  float: right;
+  padding-right: 60px;
+  width: 250px;
+  height: 300px;
+  position: relative;
+  top: -230px;
+}
+
+.imgF {
+  left: 30px;
+  top: -220px;
+}
+
+.imgT {
+  width: 40%;
+  height: 40%;
+  left: 30px;
+  top: -290px;
+}
+
+.imgR {
+  width: 45%;
+  left: 50px;
+  top: -310px;
+}
+
+.imgS {
+  width: 40%;
+  height: 40%;
+  left: 50px;
+  top: -280px;
+}
+
+/* Estilos para el pie de página */
+footer {
+  clear: both;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Hacer que las imágenes no se desborden */
+img {
+  max-width: 100%;
+}
+
+/* Estilos para las tablas */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+table, th, td {
+  border: 1px solid gray;
+  text-align: center;
+}
+
+th {
+  background-color: #ddd;
+}
+
+/* Estilos para el botón en la parte superior */
+.btn-oscuro {
+  position: fixed;
+  top: 10px; /* Ajusta la distancia desde la parte superior de la página */
+  right: 83%;
+  transform: translateX(-50%); /* Centra el botón en la pantalla */
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro con algo de transparencia */
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  z-index: 1000; /* Asegura que el botón esté encima de otros elementos */
+}
+
+.btn-oscuro:hover {
+  background-color: #333; /* Cambia el color a un tono más oscuro cuando se pasa el ratón */
+}
+
+/* Estilo para el reloj en la parte superior derecha */
+#reloj {
+  font-size: 1.4em;
+  font-weight: bold;
+  color: white;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background-color: rgba(0, 0, 0, 0.6); /* Fondo negro con transparencia */
+  padding: 10px;
+  border-radius: 3px;
+  z-index: 1000; /* Asegura que el reloj esté encima de otros elementos */
+  text-align: right;
+}

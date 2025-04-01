@@ -1,0 +1,149 @@
+/* Centrar el contenido de todo el body */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra horizontalmente */
+    justify-content: flex-start;
+    height: 100vh;
+}
+
+/* Header */
+header {
+    background-image: url("adrián morales.png"); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    color: white;
+    height: 150px; 
+    width: 100%;
+    padding: 15px 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center; 
+    justify-content: center; /* Centra el contenido dentro del header */
+}
+
+/* Estilo para la barra de navegación */
+nav {
+    background-color: rgb(236, 245, 235);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+nav a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 14px 16px;
+}
+
+nav a:hover {
+    background-color: #d3d3d3;
+}
+
+/* Tabla sin cambios de tamaño */
+table {
+    border: 1px solid black;
+    margin-top: 20px;
+    text-align: center; /* Centra el texto dentro de las celdas */
+}
+
+td {
+    border: 1px solid black;
+}
+
+/* Colores para las filas */
+tr td {
+    color: rgb(79, 167, 133)
+}
+
+tr + tr td {
+    color: rgb(253, 16, 16)
+}
+
+tr + tr + tr td {
+    color: rgb(9, 9, 128);
+}
+
+tr + tr + tr + tr td {
+    color: rgb(255, 165, 0)
+}
+
+tr + tr + tr + tr + tr td {
+    color: rgb(128, 0, 128)
+}
+
+tr + tr + tr + tr + tr + tr td {
+    color: rgb(128, 128, 0);
+}
+
+tr + tr + tr + tr + tr + tr + tr td {
+    color: rgb(255, 0, 255)
+}
+
+tr + tr + tr + tr + tr + tr + tr + tr td {
+    color: rgb(50, 143, 50)
+}
+
+/* Colores de fondo para las celdas */
+tr td {
+    background-color: rgb(173, 216, 230);
+}
+
+tr td + td {
+    background-color: rgb(242, 121, 107)
+}
+
+tr td + td + td {
+    background-color: rgb(255, 229, 180)
+}
+
+tr td + td + td + td {
+    background-color: rgb(144, 238, 144)
+}
+
+/* Estilo para el footer */
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Footer con año actualizado */
+footer.ano {
+    margin-top: 20px; /* Espacio superior */
+}
+
+/* Centrar el contenido de la página */
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+}
+
+.seccion {
+    margin: 20px 0;
+    width: 100%; /* Mantiene el tamaño original del contenido */
+    max-width: 900px; /* Limita el ancho máximo de cada sección */
+}
+
+.contenedor-imagen {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}

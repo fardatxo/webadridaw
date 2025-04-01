@@ -1,0 +1,127 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: gold;
+    border: 1px solid blue;
+}
+.primerh {
+        background-image: url("adrián morales.png"); 
+        background-size: cover; 
+        background-position: center; 
+        background-repeat: no-repeat; 
+        color: white;
+        height: 150px; 
+        width: 100%;
+        padding: 15px 20px;
+        font-weight: bold;
+        display: flex;
+        align-items: center; 
+    }
+
+  nav {
+    background-color: rgb(236, 245, 235);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 14px 16px;
+}
+
+  nav a:hover {
+    background-color: #d3d3d3;
+  }
+.zapato {
+    width: 1550px;
+    margin: 0;
+    text-align: center;
+}
+
+.prim {
+    background-color: gold;
+    color: blue;    
+    padding: 15px;
+    font-style: italic;
+    border: 1px solid #191970;
+}
+
+.prim h1 {
+    margin: 0;
+}
+
+table {
+    
+    border-collapse: collapse;
+    margin-top: 0;
+    width: 1400px;
+}
+
+.foto {
+    background-color: plum;
+    width: 250px;
+
+}
+.dos {
+    font-style: italic;
+}
+
+.torrilasa {
+    text-align: center;
+    font-style: italic;
+    color: gold;
+}
+
+th {
+    background-color: gold;
+    color: blue;
+    padding: 5px;
+    border: 1px solid #000;
+}
+
+td {
+    background-color: #001263;
+    color: white;
+    padding: 20px;
+    border: 1px solid #000;
+    text-align: left;
+    vertical-align: top;
+}
+
+img {
+    width: 300px;
+    text-align: center;
+    margin-top: 100px;
+    margin-left: 18px;
+    height: auto;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: gold;
+    color: blue;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+footer form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    
+}
+
+footer input, footer button {
+    padding: 5px;
+    font-size: 16px;
+}
+.ano {
+    clear: both;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
